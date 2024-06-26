@@ -9,8 +9,10 @@ const routes = [
   { path: '/app2', name: 'App2', component: App2 },
 ];
 
+const path = process.env.NODE_ENV === 'production' ? '/micro-app-feedback/' : ''
+
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(path),
   routes,
 });
 
