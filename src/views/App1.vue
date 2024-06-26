@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>App 1</h1>
+    <h1>Sub App</h1>
+    <micro-app name='my-app' url='https://alexgofreight.github.io/website-mf-testing/'></micro-app>
   </div>
 </template>
 
